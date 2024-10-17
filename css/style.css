@@ -1,0 +1,214 @@
+:root {
+    --fuente-principal: "Poppins", sans-serif;
+    --fuente-secundaria: "DM Sans", sans-serif;
+    --fuente-grande: "Prompt", sans-serif;
+    --colorFondo: #fcfcf7;
+    --colorNegro: #101415;
+    --colorGris: #e9ecef;
+    --colorAmarillo: #ffd43b;
+    --colorAzul: #a5d8ff;
+}
+body {
+    background-color: var(--colorFondo);
+    font-family: var(--fuente-principal);
+}
+h1 {
+    font-family: var(--fuente-grande);
+    font-size: 40px;
+}
+h2 {
+    font-size: 18px;
+}
+/*Barra de navegación*/
+.nav-section {
+    display: flex;
+    justify-content: center;
+}
+.nav-barra {
+    background-color: var(--colorNegro);
+    width: 1000px;
+    height: 70px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.nav-botones {
+    display: flex;
+    padding-left: 0;
+}
+.nav-botones li {
+    list-style: none;
+}
+.nav-botones a {
+    color: var(--colorNegro);
+    text-decoration: none;
+}
+.tituloLogo {
+    color: var(--colorAmarillo);
+    text-decoration: none;
+}
+.boton {
+    background-color: var(--colorAzul);
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+.boton:hover {
+    filter: sepia(50%);
+}
+/*Botones de filtros*/
+.filtros {
+    display: flex;
+    justify-content: center;
+}
+.filtros-contenido {
+    background-color: var(--colorGris);
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 1400px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filtros-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtros-lista a {
+    text-decoration: none;
+}
+.filtros-lista a:hover {
+    cursor: pointer;
+}
+.filtros-lista li:hover {
+    filter: brightness(85%);
+}
+.filtros-lista li {
+    color: var(--colorNegro);
+    background-color: var(--colorAmarillo);
+    list-style: none;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Barra de búsqueda*/
+.personajes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.personajes-contenedor {
+    background-color: var(--colorGris);
+    border-radius: 20px;
+    width: 1100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#personajes-boton {
+    border-style: solid;
+    border-color: var(--colorNegro);
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+#buscar {
+    background-color: var(--colorFondo);
+    border-color: #9d9fa1;
+    border-style: solid;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px 10px;
+    height: 40px;
+    width: 90%;
+}
+#personajes-boton:hover {
+    filter: brightness(80%);
+}
+/*Cartas de personajes*/
+.pokedex-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.carta-pokedex {
+    background-color: var(--colorGris);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.carta-pokedex h2 {
+    text-align: center;
+}
+#tipos-pk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tipos-pk p {
+    margin-right: 10px;
+}
+/*Lista de personajes*/
+.pokemons-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.pokemons-lista {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.pokemon-pj {
+    background-color: var(--colorGris);
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+.flex-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-img {
+    width: 230px;
+    height: 220px;
+    border-radius: 10px;
+}
+.div-titulo {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.div-habilidades {
+    font-weight: bold;
+}
+.div-hb {
+    text-decoration: underline;
+}

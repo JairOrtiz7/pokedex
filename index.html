@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@100;300;400;700&family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Open Graph-->
+    <link rel="icon" type="image/png" href="/img/iconPokebola.webp">
+</head>
+<body>
+    <section class="nav-section">   
+        <header class="nav-barra">
+            <a class="tituloLogo" href="/index.html"><img src="/img/logoPokedex.webp" alt="Logo de pokedex" width="150px" height="50px"></a>
+            <nav>
+                <ul class="nav-botones">
+                    <a class="boton" href="/index.html"><li>Buscar por tipo</li></a>
+                    <a class="boton" href="/pokemon.html"><li>Buscar por pokémon</li></a>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section class="filtros">
+        <div class="filtros-contenido">
+            <ul class="filtros-lista">
+                <a class="botonHeader" id="normal"><li>normal</li></a>
+                <a class="botonHeader" id="fighting"><li>fighting</li></a>
+                <a class="botonHeader" id="poison"><li>poison</li></a>
+                <a class="botonHeader" id="flying"><li>flying</li></a>
+                <a class="botonHeader" id="ground"><li>ground</li></a>
+                <a class="botonHeader" id="rock"><li>rock</li></a>
+                <a class="botonHeader" id="bug"><li>bug</li></a>
+                <a class="botonHeader" id="ghost"><li>ghost</li></a>
+                <a class="botonHeader" id="steel"><li>steel</li></a>
+                <a class="botonHeader" id="fire"><li>fire</li></a>
+                <a class="botonHeader" id="water"><li>water</li></a>
+                <a class="botonHeader" id="grass"><li>grass</li></a>
+                <a class="botonHeader" id="electric"><li>electric</li></a>
+                <a class="botonHeader" id="psychic"><li>psychic</li></a>
+                <a class="botonHeader" id="ice"><li>ice</li></a>
+                <a class="botonHeader" id="dragon"><li>dragon</li></a>
+                <a class="botonHeader" id="dark"><li>dark</li></a>
+                <a class="botonHeader" id="fairy"><li>fairy</li></a>
+                <a class="botonHeader" id="unknown"><li>unknown</li></a>
+                <a class="botonHeader" id="shadow"><li>shadow</li></a>
+            </ul>
+        </div>
+    </section>
+
+    <section class="pokemons-contenedor">
+        <div class="pokemons-lista" id="pokemons-card">
+            <!-- 
+            <div class="pokemon-pj">
+                <div class="flex-img">
+                    <img class="div-img" src="/img/fotoPokemon.jpg" alt="foto de pokemon">
+                </div>
+                <p class="div-nolista">ID: 1</p>
+                <h2 class="div-titulo">Pikachu</h2>
+                <p class="div-habilidades">Habilidades: </p>
+                <div>
+                    <p class="div-hb">llamas</p>
+                    <p class="div-hb">llamas</p>
+                    <p class="div-hb">llamas</p>
+                </div> 
+            </div>
+            -->
+        </div>
+    </section>
+
+    <script src="/filtros.js"></script>
+</body>
+</html>
